@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.notifyCheckBox = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -48,6 +50,14 @@
             this.panel1.Size = new System.Drawing.Size(1063, 675);
             this.panel1.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.notifyCheckBox);
+            this.panel2.Location = new System.Drawing.Point(2, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1063, 50);
+            this.panel2.TabIndex = 1;
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.panel3);
@@ -56,13 +66,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1060, 621);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(2, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1063, 50);
-            this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
@@ -86,6 +89,17 @@
             this.panel5.Size = new System.Drawing.Size(506, 519);
             this.panel5.TabIndex = 0;
             // 
+            // notifyCheckBox
+            // 
+            this.notifyCheckBox.AutoSize = true;
+            this.notifyCheckBox.Location = new System.Drawing.Point(15, 14);
+            this.notifyCheckBox.Name = "notifyCheckBox";
+            this.notifyCheckBox.Size = new System.Drawing.Size(63, 20);
+            this.notifyCheckBox.TabIndex = 0;
+            this.notifyCheckBox.Text = "Notify";
+            this.notifyCheckBox.UseVisualStyleBackColor = true;
+            this.notifyCheckBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -96,6 +110,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -110,6 +126,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.CheckBox notifyCheckBox;
     }
 }
 
